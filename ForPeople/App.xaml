@@ -1,0 +1,16 @@
+﻿<Application x:Class="ForPeople.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ForPeople"
+             xmlns:report="clr-namespace:ForPeople.ViewModel.Report"
+             xmlns:report1="clr-namespace:ForPeople.View.Report"
+             StartupUri="/View/MainWindow.xaml">
+    <Application.Resources>
+        <DataTemplate DataType="{x:Type report:PayrollViewModel}">
+            <report1:PayrollView/>
+        </DataTemplate>
+        <DataTemplate DataType="{x:Type report:ListOfEmployeesViewModel}">
+            <report1:ListOfEmployeesView/>
+        </DataTemplate>
+    </Application.Resources>
+</Application>
